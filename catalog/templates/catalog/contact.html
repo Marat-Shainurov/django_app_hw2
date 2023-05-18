@@ -1,28 +1,16 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h1>Catalogue - contacts</h1>>-->
-<!--</body>-->
-<!--</html>-->
-
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skystore</title>
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
     <nav class="ms-5">
         <a class="p-2 btn btn-outline-primary" href="/">Main page</a><br>
-        <a class="p-2 btn btn-outline-primary" href="/contacts/">Contacts</a>
     </nav>
 </div>
 
@@ -62,19 +50,21 @@
                         {% csrf_token %}
                         <div class="mb-3">
                             <br>
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your name"
+                                   required>
                         </div>
                         <div class="mb-3">
                             <br>
-                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+                            <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone"
+                                   required>
                         </div>
                         <div class="mb-3">
                             <br>
-                            <textarea type="text" name="message" class="form-control" id="message" placeholder="Your input" required></textarea>
+                            <textarea type="text" name="message" class="form-control" id="message"
+                                      placeholder="Your input" required></textarea>
                         </div>
                     </form>
-                    <input type="submit">
-                    <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Send</button>
+                    <input type="submit" class="btn btn-lg btn-block btn-outline-primary">
                 </div>
             </div>
         </div>
